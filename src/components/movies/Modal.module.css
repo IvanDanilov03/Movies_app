@@ -1,0 +1,55 @@
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.modal p {
+    color: #2c292b;
+}
+
+.buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #77002e;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.cancel {
+  color: #553c9a;
+  border: 1px solid #553c9a;
+  background-color: transparent;
+}
+
+.favorite {
+  margin-left: 5px;
+  color: #ee4b2b;
+  border: 1px solid #ee4b2b;
+}
+
+.cancel:hover,
+.cancel:active {
+  background-color: #d8caff;
+}
+
+.favorite:hover,
+.favorite:active {
+  background-color: #ffe2ed;
+}

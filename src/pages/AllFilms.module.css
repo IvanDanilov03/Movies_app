@@ -1,0 +1,4 @@
+.all_films{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,16 @@
+.filter {
+  width: 20%;
+  height: 100%;
+}
+.filter h1 {
+  margin: 0;
+}
+
+/* The checkbox holder */
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
