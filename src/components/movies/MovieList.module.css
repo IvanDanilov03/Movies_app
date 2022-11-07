@@ -13,9 +13,8 @@
 .right {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  width: 70%;
-  margin: auto;
+  margin-left: 40px;
+  /* width: 90%; */
 }
 
 @media (min-width: 620px) {
@@ -23,10 +22,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    
+    /* width: 90%; */
   }
 }
 
@@ -42,6 +38,13 @@
   margin-left: auto;
   margin-right: auto;
 
+}
+
+@media (min-width: 840px) {
+  .right {
+    margin-left: 30%;
+    /* width: 90%; */
+  }
 }
 
 @media (min-width: 1100px) {

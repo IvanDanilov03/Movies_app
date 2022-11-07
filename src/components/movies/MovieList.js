@@ -1,3 +1,4 @@
+import Pagination from "../Pagination/Pagination";
 import MovieItem from "./MovieItem";
 import classes from "./MovieList.module.css";
 
@@ -20,25 +21,7 @@ const MovieList = (props) => {
           ))}
         </div>
       </ul>
-      <div className={classes.navig}>
-        <button
-          className={classes.prev}
-          onClick={() => {
-            props.setPageNumber((oldPageNumber) => Math.max(oldPageNumber - 1, 1));
-          }}
-        >
-          Previous
-        </button>
-        <span>{props.pageNumber}</span>
-        <button
-          className={classes.next}
-          onClick={() => {
-            props.setPageNumber((oldPageNumber) => oldPageNumber + 1);
-          }}
-        >
-          Next
-        </button>
-      </div>
+      <Pagination pageNumber={props.pageNumber} setPageNumber={props.setPageNumber}/>
     </div>
   );
 };

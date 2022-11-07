@@ -12,6 +12,7 @@
     position: relative;
     animation: spinner 1s linear infinite paused;
     -webkit-animation: spinner 1s linear infinite;
+    margin: auto;
   }
   
   @keyframes spinner {

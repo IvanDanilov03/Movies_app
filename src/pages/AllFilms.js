@@ -37,10 +37,6 @@ const AllFilms = () => {
     fetchMovies();
   }, [fetchMovies]);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
   if (httpError) {
     return (
       <section>
@@ -52,12 +48,12 @@ const AllFilms = () => {
   return (
     <section className={classes.all_films}>
       <Filter />
-      <MovieList
+      {isLoading ? <Loader /> : <MovieList
         key={Math.random()}
         movies={loadedMovies}
         setPageNumber={setPageNumber}
         pageNumber={pageNumber}
-      />
+      />}
     </section>
   );
 };

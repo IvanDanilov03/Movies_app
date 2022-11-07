@@ -1,6 +1,6 @@
 import Card from "../ui/Card";
-import Modal from "./Modal";
-import Backdrop from "./Backdrop";
+import Modal from "../modal/Modal";
+import Backdrop from "../modal/Backdrop";
 import { useState } from "react";
 import classes from "./MovieItem.module.css";
 
