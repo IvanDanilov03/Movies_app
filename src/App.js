@@ -14,5 +14,5 @@ const App = () => {
     </Layout>
   );
 };
-
+console.log(parent.document.getElementById("body-widget"));
 export default App;
